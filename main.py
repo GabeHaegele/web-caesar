@@ -26,12 +26,13 @@ form = """
     </head>
     <body>
       <!-- create your form here -->
-      <form action="/action_page.php" method="POST">
+      <form action="/action_page.php" method="POST"style="width: auto; overflow: hidden;">
             <label>
                 Rotate by:
                 <input type="text" name="rot" value="0" />
             </label>
-        <textarea name="text">{0}</textarea>
+            <br>
+        <textarea name="text"></textarea>
         <input type="submit" value="Submit Query"/>
     </body>
 </html>
