@@ -32,7 +32,8 @@ form = """
                 <input type="text" name="rot" value="0" />
             </label>
             <br>
-        <textarea name="text"></textarea>
+        <textarea name="text">{0}</textarea>
+        <br>
         <input type="submit" value="Submit Query"/>
     </body>
 </html>
@@ -54,7 +55,7 @@ def index():
         error_element = ''
 
     # build the response string
-    content = form
+    content = form.format({0})
 
     return content
 
